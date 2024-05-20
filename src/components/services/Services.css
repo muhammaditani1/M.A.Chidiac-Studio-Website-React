@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900");
+.tableDisplay {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Default setting for larger screens */
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: red; */
+  max-width: 960px;
+  margin: 0 auto;
+}
+.serv-card2 {
+  border-radius: 20px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: rgb(228, 41, 41); */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.serv-card {
+  cursor: pointer;
+  background: #eeeae7;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4);
+  max-width: 320px;
+  height: 340px;
+  position: absolute;
+  transition: all ease-in 0.5s;
+}
+
+.card-container {
+  position: absolute;
+  left: 50%;
+  top: 245px;
+  background-color: #3498db;
+  transform: translate(-50%, -50%) rotateZ(-25deg);
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes card1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tableDisplay .card-card7 {
+  display: none;
+}
+/* Styling for service cards */
+.service-card {
+  text-align: center;
+  padding: 20px;
+  width: 250px; /* Fixed width for uniformity */
+  height: 340px; /* Fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(71, 71, 67, 0.4);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden; /* Prevents content from spilling out */
+}
+.serv-card2 .service-card {
+  box-shadow: none;
+}
+/* Styling for service images */
+.service-image {
+  width: auto; /* Full width of the container */
+  height: 110px; /* Fixed height to ensure images are visible */
+  object-fit: contain; /* Ensures full image is visible, might add space */
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for enlarging the image */
+.service-card:hover .service-image {
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+
+/* Styling for service titles */
+.service-title {
+  margin-top: 5px; /* Removes top margin */
+  margin-bottom: 2px; /* Consistent bottom margin */
+  font-family: Dosis, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgb(17, 17, 17);
+}
+
+/* Color change on hover for titles */
+.service-card:hover .service-title {
+  color: #3498db; /* Changes color to blue on hover */
+}
+
+/* Styling for service descriptions */
+.service-description {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: justify;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(119, 119, 119);
+  font-family: Roboto, sans-serif;
+  width: 100%; /* Full width to control text wrapping */
+  padding: 0 10px; /* Padding for layout */
+}
+/* Hovering Card Transforms */
+.hover-effect .card-card1 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: rotate(-20deg) translate3d(-30%, -10%, 0);
+}
+.hover-effect .card-card2 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: rotate(-10deg) translate3d(-19%, 1%, 0);
+}
+.hover-effect .card-card3 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: rotate(0deg) translate3d(-6%, 10%, 0);
+}
+.hover-effect .card-card4 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: rotate(10deg) translate3d(8%, 16%, 0);
+}
+.hover-effect .card-card5 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: rotate(20deg) translate3d(23%, 20%, 0);
+}
+.hover-effect .card-card6 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: rotate(30deg) translate3d(38%, 22%, 0);
+}
+.hover-effect .card-card7 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: rotate(40deg) translate3d(54%, 22%, 0);
+}
+
+.card-card1 {
+  transition: transform 0.5s ease-in-out;
+
+  transform: translateX(-3%);
+}
+.card-card2 {
+  transform: translateX(-2.5%);
+}
+.card-card3 {
+  transform: translateX(-2%);
+}
+.card-card4 {
+  transform: translateX(-1.5%);
+}
+.card-card5 {
+  transform: translateX(-1%);
+}
+.card-card6 {
+  transform: translateX(-0.5%);
+}
+.card-card7 {
+  transform: translateX(0%);
+}
+@media screen and (min-width: 2560px) {
+  .tableDisplay {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .card-container {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@media only screen and (min-resolution: 2dppx) {
+  .tableDisplay {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .card-container {
+    left: 50%;
+    top: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tableDisplay {
+    /* width: 100%; */
+    grid-template-columns: 1fr; /* Single column for mobile */
+    margin-top: 35%;
+    margin-left: -11%;
+  }
+
+  .serv-card2 {
+    /* margin: 10px auto; Center align and add some margin */
+    width: 100%;
+    height: 100%; /* Height becomes flexible */
+    margin-left: 6%;
+    /* padding: 15px; Reduced padding */
+  }
+
+  .service-card {
+    height: 300px; /* Smaller fixed height for consistency */
+  }
+
+  .service-image {
+    height: 100px; /* Smaller height for images */
+    margin-bottom: 0;
+  }
+
+  .service-title {
+    font-size: 0.8rem; /* Smaller font size for titles */
+    letter-spacing: 0.3em; /* Adjust letter spacing */
+    margin-bottom: 0;
+  }
+
+  .service-description {
+    font-size: 0.6rem; /* Smaller font size for descriptions */
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack cards vertically in mobile view */
+    width: 100%; /* Full width to use available space */
+    transform: none; /* Disable transformations */
+    left: 0%;
+    top: 50%;
+  }
+  /* Hovering Card Transforms */
+  .hover-effect .card-card1 {
+    transform: rotate(-20deg) translate3d(0%, 0%, 0);
+  }
+  .hover-effect .card-card2 {
+    transform: rotate(-10deg) translate3d(0%, 0%, 0);
+  }
+  .hover-effect .card-card3 {
+    transform: rotate(0deg) translate3d(0%, 0%, 0);
+  }
+  .hover-effect .card-card4 {
+    transform: rotate(10deg) translate3d(0%, 0%, 0);
+  }
+  .hover-effect .card-card5 {
+    transform: rotate(20deg) translate3d(0%, 0%, 0);
+  }
+  .hover-effect .card-card6 {
+    transform: rotate(30deg) translate3d(0%, 0%, 0);
+  }
+  .hover-effect .card-card7 {
+    transform: rotate(20deg) translate3d(0%, 0%, 0);
+  }
+}

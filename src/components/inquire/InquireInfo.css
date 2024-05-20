@@ -1,0 +1,134 @@
+.inquire-info-body {
+  color: #111;
+  font-size: 14px;
+  line-height: 1.6;
+  /* background-color: lawngreen; */
+  /* height: 100vh; */
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 80px 0;
+}
+
+.inquire-info-container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 90%; /* Responsive width */
+  position: relative;
+}
+
+.inquire-info-title {
+  margin: 20px 0 15px;
+  font-family: Dosis, arial, sans-serif;
+  color: rgb(17, 17, 17);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5em;
+  line-height: 25px;
+}
+
+.inquire-info-sub-title {
+  font-weight: 400;
+  text-align: center;
+  font-family: Dosis, arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #aaa;
+  margin-bottom: 70px;
+  line-height: 17px;
+}
+
+.main-info-container {
+  margin: 0 auto 60px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between; /* Ensures proper spacing */
+  align-items: stretch; /* Aligns all children to the same height */
+  padding: 0;
+}
+
+.sub-container {
+  flex: 1 1 30%; /* Responsive flex settings */
+  padding: 20px;
+  display: flex; /* Added for flex properties */
+  align-items: flex-start; /* Aligns content to the top */
+  justify-content: center; /* Horizontally centers the content */
+}
+
+.inquire-info-item {
+  position: relative;
+  padding-left: 44px;
+  color: #444;
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  display: flex; /* Ensures flex properties */
+  align-items: flex-start; /* Aligns the icon and text to the start */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.ci-icon {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 23px;
+}
+
+.ci-title {
+  font-family: Dosis, arial, sans-serif;
+  color: rgb(119, 119, 119);
+  line-height: 19px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-align: justify;
+}
+
+.ci-text {
+  font-family: Roboto, sans-serif;
+  color: rgb(68, 68, 68);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.ci-text a {
+  text-decoration: none; /* Removes text decoration */
+  color: inherit; /* Inherits color from parent */
+}
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .info-container {
+    padding-left: 100px;
+    flex-direction: column; /* Stack each sub-container vertically */
+  }
+
+  .sub-container {
+    flex: 1 1 100%; /* Each sub-container takes full width */
+    padding: 10px 0; /* Adjust padding for better mobile presentation */
+    justify-content: flex-start; /* Align content to the start */
+  }
+
+  .inquire-info-item {
+    padding-left: 50px; /* Adjust padding for mobile devices */
+  }
+}

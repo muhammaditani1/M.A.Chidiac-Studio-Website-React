@@ -1,0 +1,109 @@
+/* Base Styles */
+#place {
+  height: 100vh;
+  padding-top: 35px;
+  /* background-color: black; */
+}
+.place__container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to ensure two columns */
+  justify-content: space-between; /* Space between text and image */
+  align-items: flex-start; /* Align items to the top */
+  flex-direction: row-reverse; /* Reverse the order of the flex items */
+
+}
+
+.place__info__container {
+  padding-top: 10%;
+  padding-left: 3%;
+  flex: 0 1 60%; /* Flexible grow, shrink, basis at 60% of the space */
+  padding-right: 20px; /* Add some spacing between text and image */
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 40px;
+  font-size: 16px;
+  font-style: normal;
+  color: rgb(119, 119, 119);
+  text-align: justify; /* Ensure text is justified to start */
+}
+
+.place__title h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #111;
+  text-align: start !important; /* Ensure text is justified to start */
+}
+
+.place__image {
+  flex: 0 1 40%; /* Flexible grow, shrink, basis at 40% of the space */
+  padding-left: 10px; /* No additional spacing between text and image */
+}
+
+/* Responsive styles */
+@media screen and (min-width: 2560px) {
+  #place {
+    padding-top: 80px;
+  }
+
+  .place__title h3 {
+    font-size: 40px;
+    line-height: 35px;
+    letter-spacing: 0.4em;
+  }
+  .place__info__container p {
+    font-size: 30px;
+  }
+  .place__image img {
+    width: auto;
+    height: 900px;
+  }
+}
+/* MACCCCCBOOOOOK */
+@media only screen and (min-resolution: 2dppx) {
+  #place {
+    padding-top: 60px;
+  }
+
+  .place__title h3 {
+    font-size: 27px;
+    line-height: 28px;
+    letter-spacing: 0.3em;
+  }
+  .place__info__container p {
+    font-size: 20px;
+  }
+}
+
+/* PHONEEEEEE */
+@media (max-width: 768px) {
+  #place {
+    height: auto; /* Adjust height for mobile view */
+  }
+
+  .place__container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .place__info__container, .place__image {
+    flex: 0 1 100%; /* Each takes full width */
+    /* padding-right: 0;  */
+  }
+
+  .place__image img{
+    height: auto;
+    width :400px;
+    padding: 5px auto ;
+  }
+  .place__info__container {
+    padding-top: 5%; /* Reduce padding top for mobile view */
+  }
+  .place__info__container p{
+    font-size: 15px;
+  }
+}
+

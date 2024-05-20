@@ -1,0 +1,194 @@
+.main__clients {
+  padding-top: 50px;
+  height: 100vh;
+  margin-bottom: -140px;
+  /* background-color: aquamarine; */
+}
+.Client__App {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.Client__title {
+  margin-bottom: 21px;
+}
+.Client__title h1 {
+  color: rgb(17, 17, 17);
+  font-family: Dosis, ariel, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  margin-top: 20px;
+  
+}
+
+.Client__image_wrapper {
+  margin: 0px 30px;
+}
+
+.Client__image_wrapper img {
+  height: 60px;
+  width: auto;
+}
+.Client__marquee-container {
+  width: 80%; /* Adjust this value as needed */
+  margin: 0 auto; /* This centers the container */
+}
+.Client-Title h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 25px;
+  font-family: Dosis, arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(75, 74, 74);
+  text-align: center !important;
+}
+/* IMAC imac imac imac imac imac imac imac */
+@media screen and (min-width: 2560px) {
+  .main__clients {
+    padding-top: 50px;
+    height: 100vh;
+    margin-bottom: -125px;
+  }
+  .Client-Title h3 {
+    /* margin-bottom: 50px; */
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    line-height: 40px;
+    font-family: Dosis, arial, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(75, 74, 74);
+    text-align: center !important;
+  }
+  .Client-Title {
+    margin-bottom: 120px;
+  }
+  .Client__App {
+    /* margin-bottom: 200px; */
+  }
+  .Client__title {
+    margin-bottom: 100px;
+  }
+  .Client__title h1 {
+    font-size: 40px;
+    font-family: Dosis, arial, sans-serif;
+    ont-weight: 400;
+    letter-spacing: 0.6em;
+  }
+  .Client__image_wrapper {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+
+  .Client__image_wrapper img {
+    height: 100px;
+    width: auto;
+  }
+  .Client__marquee-container {
+    width: 80%; /* Adjust this value as needed */
+    margin: 0 auto; /* This centers the container */
+  }
+}
+/* MACBOOK MACBOOK MACBOOK MACBOOK MACBOOK MACBOOK MACBOOK */
+@media only screen and (min-resolution: 2dppx) {
+  .main__clients {
+    height: 100vh;
+    padding-top: 50px;
+    margin-bottom: -125px;
+
+  }
+  .Client-Title h3 {
+    /* margin-bottom: 50px; */
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    line-height: 20px;
+    font-family: Dosis, arial, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(75, 74, 74);
+    text-align: center !important;
+  }
+  .Client-Title {
+    margin-bottom: 60px;
+  }
+  .Client__App {
+    /* margin-bottom: 200px; */
+  }
+  .Client__title {
+    margin-bottom: 20px;
+  }
+  .Client__title h1 {
+    font-size: 20px;
+    font-family: Dosis, arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+  }
+  .Client__image_wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .Client__image_wrapper img {
+    height: 60px;
+    width: auto;
+  }
+  .Client__marquee-container {
+    width: 80%; /* Adjust this value as needed */
+    margin: 0 auto; /* This centers the container */
+  }
+}
+/* PHONE PHONE PHONE PHONE PHONE PHONE */
+@media (max-width: 768px) {
+  .main__clients {
+    height: auto;
+    padding-top: 50px;
+  }
+  .Client-Title h3 {
+    /* margin-bottom: 50px; */
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    line-height: 15px;
+    font-family: Dosis, arial, sans-serif;
+    font-style: normal;
+    font-size: 8px;
+    font-weight: 800;
+    color: rgb(75, 74, 74);
+    text-align: center !important;
+  }
+  .Client-Title {
+    margin-bottom: 60px;
+  }
+  .Client__App {
+    /* margin-bottom: 200px; */
+  }
+  .Client__title {
+    /* margin-bottom: 0px; */
+  }
+  .Client__title h1 {
+    font-size: 10px;
+    font-family: Dosis, arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.6em;
+  }
+  .Client__image_wrapper {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .Client__image_wrapper img {
+    height: 40px;
+    width: auto;
+  }
+  .Client__marquee-container {
+    width: 100%; /* Adjust this value as needed */
+    margin: 0 auto; /* This centers the container */
+  }
+}

@@ -1,0 +1,225 @@
+.Work-Title-Description {
+  margin-top: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: rgb(170, 170, 170);
+  font-family: Dosis, ariel, sans-serif;
+  line-height: 17px;
+  font-weight: 400;
+}
+.Work-Titles {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 25px;
+  font-family: Dosis, ariel, sans-serif;
+  margin-top: 15px;
+}
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  z-index: 1000; /* Make sure it's above all other content */
+}
+
+.modal-content {
+  width: 70%; /* Adjust the width as needed */
+  height: 70%; /* Adjust the height as needed */
+  position: relative; /* Necessary for correct positioning of the iframe and images */
+  padding-top: 20px; /* Space for close button */
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 100px; /* Adjust the position as needed */
+  right: 100px; /* Adjust the position as needed */
+  padding: 5px 10px;
+  background-color: white; /* Red color for visibility */
+  color: #2b535b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.video-modal button:hover {
+  background-color: #273c5a;
+  color: white; /* Darker shade on hover */
+}
+
+/* Base container styles */
+.work-card-stacks {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(250px, 1fr)
+  ); /* Adjusted grid for responsive layout */
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px; /* Add gap between table columns */
+  margin: 20px;
+  transition: height 0.3s ease;
+}
+
+/* Base styles for individual cards */
+.work-card {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  position: relative; /* Essential for positioning the intro text */
+  overflow: hidden; /* This will keep the scaled image within the card boundaries */
+}
+
+.work-card .work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  /* border-radius: 10px; Maintain border-radius for the image */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+/* Handling hover to reduce opacity */
+.work-card:hover .work-image img {
+  transform: scale(1.1); /* Scales the image up */
+}
+.work-intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Set a maximum width for better responsiveness */
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-card:hover .work-intro {
+  opacity: 1;
+}
+
+.work-card:hover .work-image img {
+  opacity: 0.1; /* Reduce opacity of image on hover */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .work-card-stacks {
+    grid-template-columns: 1fr; /* Set one column for smaller screens */
+  }
+}
+
+/* Remove bottom margin from last row of cards */
+.work-card-stacks.distributed .work-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Section and title styling */
+#work {
+  padding: 40px 20px;
+  /* background-color: brown; */
+  /* height: 100vh; */
+}
+
+#work > div:first-child {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#work .work-desc {
+  font-size: 0.7em; /* Base font size for desktops */
+  font-weight: 200;
+  letter-spacing: 0.4em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-family: Dosis, ariel, sans-serif;
+}
+
+#work .work-title {
+  font-family: Dosis, ariel, sans-serif;
+  font-size: 1em;
+  font-weight: 1;
+  line-height: 1;
+  letter-spacing: 0.5em;
+  color: #111;
+}
+
+/* Navigation buttons styling */
+.work-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.work-nav button {
+  background-color: white;
+  border: none;
+  color: #999;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-family: Dosis, ariel, sans-serif;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.work-nav button.active {
+  color: #111;
+}
+
+.work-nav button:hover {
+  transform: translateY(-2px);
+  background-color: white;
+}
+
+.work-nav button:focus {
+  outline: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  #work h1 {
+    font-size: 2em;
+  }
+  .Work-Titles{
+    margin-bottom: 50px;
+  }
+  .Work-Title-Description{
+    color:#2b26269a ;
+  }
+  #work h3 {
+    font-size: 1.2em;
+  }
+
+  .work-nav button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-nav button {
+    width: 100%;
+    margin: 5px 0; /* Adds margin for vertical stacking */
+  }
+}

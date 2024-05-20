@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+}
+.navbar {
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+  height: 60px; /* Fixed height for navbar */
+  /* background-color: aqua; */
+  position: fixed;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.logo {
+  flex: 0 1 auto;
+  padding-top: 7px;
+}
+
+.nav-elements {
+  flex: 1; /* Changed from flex: 1 0 auto to allow growth and ensure elements don't push out */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-elements ul {
+  display: flex;
+  margin: 0;
+  padding-right: 35px; /* Add right padding to ensure spacing from the edge */
+  list-style-type: none;
+  width: 100%; /* Ensure the ul takes full width available */
+  justify-content: flex-end; /* Keeps items right-aligned but can adjust for spacing */
+}
+.nav-elements ul li {
+  padding-right: 20px; /* Consistent padding for all items */
+}
+
+.nav-elements ul li:last-child {
+  padding-right: 0; /* Removes unnecessary right padding on the last item */
+}
+
+.nav-elements ul a {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(20, 19, 19);
+  text-decoration: none;
+  line-height: 55px; /* Ensures alignment in the center of nav bar */
+}
+
+.nav-elements ul a:hover,
+.nav-elements ul a.active {
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* background-color: #000000; */
+}
+.menu-icon {
+  display: none;
+}
+
+.sticky.navbar {
+  background-color: rgba(10, 10, 10, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sticky .nav-elements ul a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    padding-right: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1050;
+    width: 45px;
+    height: 45px;
+  }
+
+  .nav-elements {
+    border-top-color: white;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 0;
+    height: 100vh;
+    transition: width 0.3s ease-in;
+    overflow-y: auto;
+    z-index: 1040;
+  }
+
+  .nav-elements.active {
+    width: 180px;
+  }
+
+  .nav-elements ul {
+    /* border: 10px solid black; */
+    display: list-item;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-right: 60px; */
+    /* padding-top: -50%; */
+  }
+
+  .nav-elements ul li {
+    width: 100%;
+
+    /* margin-top: 20px; */
+  }
+  .sticky .nav-elements ul a {
+    color: rgb(255, 255, 255);
+  }
+  .sticky .nav-elements {
+    background-color: black;
+    border-top-color: rgb(0, 0, 0);
+  }
+}

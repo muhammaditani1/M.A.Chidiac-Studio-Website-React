@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import React from "react";
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 import Marquee from "react-fast-marquee";
 import AUB from "../../images/clients-logos/aub.png";
 import AUDI from "../../images/clients-logos/audi.png";
@@ -50,24 +46,13 @@ function Clients() {
         </h3>
       </div>
 
-<<<<<<< HEAD
-      {/* International clients */}
-=======
-      {/* international clients */}
-
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
       <div className="Client__App">
         <div className="Client__title">
           <h1>INTERNATIONAL CLIENTS</h1>
         </div>
-<<<<<<< HEAD
         <div className="Client__marquee-container">
           <Marquee direction="right" speed={100}>
-=======
 
-        <div className="Client__marquee-container">
-          <Marquee direction="right" speed={100} delay={5}>
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
             <div className="Client__image_wrapper">
               <img src={BARCA} width="67" height="67" alt="Barca" />
             </div>
@@ -81,7 +66,7 @@ function Clients() {
               <img src={KSA2030} width="67" height="67" alt="KSA VISION 2030" />
             </div>
             <div className="Client__image_wrapper">
-<<<<<<< HEAD
+
               <img src={INTEL} width="67" height="67" alt="INTEL" />
             </div>
             <div className="Client__image_wrapper">
@@ -131,87 +116,25 @@ function Clients() {
             </div>
             <div className="Client__image_wrapper">
               <img src={UN} width="67" height="67" alt="UN" />
-=======
-              <img src={INTEL} width="67" height="67" alt="INTEL" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={PSG} width="67" height="67" alt="PSG" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={CARREFOUR} width="67" height="67" alt="Carrefour" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={MAJID} width="67" height="67" alt="MAJID" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={UNDP} width="67" height="67" alt="UNDP" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={HABANO} width="67" height="67" alt="HABANO" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={IMC} width="67" height="67" alt="IMC" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={OXFAM} width="67" height="67" alt="OXFAM" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={STC} width="67" height="67" alt="STC" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={CARITAS} width="67" height="67" alt="CARITAS" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={UNRWA} width="67" height="67" alt="UNRWA" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={ICMPD} width="67" height="67" alt="ICMPD" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={FPSC} width="67" height="67" alt="FPSC" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={MUSEU} width="67" height="67" alt="MUSEU" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={FBO} width="67" height="67" alt="FBO" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={TLC} width="67" height="67" alt="TLC" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={IMC} width="67" height="67" alt="IMC" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={UN} width="67" height="67" alt="UN" />{" "}
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
+
             </div>
           </Marquee>
         </div>
       </div>
 
       {/* Local clients */}
-<<<<<<< HEAD
-=======
 
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
       <div className="Client__App">
         <div className="Client__title">
           <h1>LOCAL CLIENTS</h1>
         </div>
-<<<<<<< HEAD
         <div className="Client__marquee-container">
           <Marquee direction="right" speed={100}>
-=======
 
-        <div className="Client__marquee-container">
-          <Marquee direction="right" speed={100} delay={5}>
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
             <div className="Client__image_wrapper">
               <img src={CSRL} width="67" height="67" alt="CSRL" />
             </div>
             <div className="Client__image_wrapper">
-<<<<<<< HEAD
               <img src={PACE_E_LUCEE} width="67" height="67" alt="Pace E Luce" />
             </div>
             <div className="Client__image_wrapper">
@@ -246,48 +169,7 @@ function Clients() {
             </div>
             <div className="Client__image_wrapper">
               <img src={MEDGULF} width="67" height="67" alt="MEDGULF" />
-=======
-              <img
-                src={PACE_E_LUCEE}
-                width="67"
-                height="67"
-                alt="Pace E Luce"
-              />
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={AUB} width="67" height="67" alt="AUB" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={AUDI} width="67" height="67" alt="AUDI" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={BH} width="67" height="67" alt="BH" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={BIAF} width="67" height="67" alt="BIAF" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={BOB} width="67" height="67" alt="BOB" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={DALAL} width="67" height="67" alt="DALAL" />{" "}
-            </div>
 
-            <div className="Client__image_wrapper">
-              <img src={IDS} width="67" height="67" alt="IDS" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={HALLAB} width="67" height="67" alt="HALLAB" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={LACPA} width="67" height="67" alt="LACPA" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={LRC} width="67" height="67" alt="LRC" />{" "}
-            </div>
-            <div className="Client__image_wrapper">
-              <img src={MEDGULF} width="67" height="67" alt="MEDGULF" />{" "}
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
             </div>
           </Marquee>
         </div>
@@ -295,8 +177,4 @@ function Clients() {
     </section>
   );
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 export default Clients;

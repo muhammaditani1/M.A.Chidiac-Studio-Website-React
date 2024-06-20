@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import {useState} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import "./NewsLetter.css";
-<<<<<<< HEAD
 
 function NewsletterForm() {
   const [email, setEmail] = useState("");
 
-=======
-function NewsletterForm() {
-  const [email, setEmail] = useState("");
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // Add logic to submit email to your newsletter service
@@ -18,10 +14,7 @@ function NewsletterForm() {
     // Reset the input field after submission
     setEmail("");
   };
-<<<<<<< HEAD
 
-=======
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
   return (
     <section id="news">
       <form className="form" onSubmit={handleSubmit}>
@@ -34,11 +27,9 @@ function NewsletterForm() {
             className="input-mail"
             type="email"
             id="email"
-<<<<<<< HEAD
             name="email"
             autoComplete="email"
-=======
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
+
             placeholder="ENTER YOUR EMAIL"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -67,30 +58,6 @@ function NewsletterForm() {
           </h3>
         </div>
       </form>
-<<<<<<< HEAD
-=======
-
-      {/* <div className="news__title">
-        <h3>STAY INFORMED WITH OUR NEWSLETTER</h3>
-      </div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          id="email"
-          placeholder="ENTER YOUR EMAIL"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <button type="submit">Subscribe</button>
-      </form>
-      <div>
-        <h3>
-          <FontAwesomeIcon icon={faInfoCircle} /> Trust us, we will never send
-          you spam.
-        </h3>
-      </div> */}
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
     </section>
   );
 }

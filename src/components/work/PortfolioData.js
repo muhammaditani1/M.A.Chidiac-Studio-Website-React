@@ -20,11 +20,9 @@ import SM from "../../images/portfolio/sm.jpg";
 import PORTFOLIO from "../../images/portfolio/M. A. CHIDIAC Studio _ Agency Portfolio 2022.pdf";
 import FUEGO from "../../images/portfolio/fuego.jpg";
 import PACE_E_LUCE from "../../images/portfolio/paceeluce.jpg";
-<<<<<<< HEAD
 import SULTAN from "../../images/portfolio/sultancenter.png";
 import SULTANCOVER from "../../images/portfolio/sultancentercover.png";
-=======
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
+
 export const Work_Data = [
   {
     id: "p1",
@@ -181,7 +179,6 @@ export const Work_Data = [
     contentType: "web",
     content: "https://www.paceeluce.com/",
   },
-<<<<<<< HEAD
   {
     id: "p18",
     type: "DESIGN",
@@ -191,6 +188,5 @@ export const Work_Data = [
     contentType: "image",
     image2: SULTAN,
   },
-=======
->>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
+
 ];

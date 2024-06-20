@@ -57,12 +57,17 @@
   font-size: 15px;
   line-height: 26px;
   color: rgb(119, 119, 119);
+<<<<<<< HEAD
   perspective: 1000px; /* Add perspective to the parent container */
+=======
+  /* transition: opacity 0.3s ease-in-out; */
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 }
 
 .culture-content div {
   width: 32%; /* Approximate calculation for 3 columns */
   padding: 10px;
+<<<<<<< HEAD
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -71,6 +76,9 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add shadow to create floating effect */
 }
 
+=======
+}
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 .culture-content h2 {
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -88,6 +96,7 @@
 .culture-content p {
   text-align: justify;
   margin-top: 0px;
+<<<<<<< HEAD
   transition: transform 0.3s ease; /* Transition for paragraphs */
 }
 
@@ -95,6 +104,9 @@
   transform: translateZ(30px) rotateY(-10deg) rotateX(-10deg); /* 3D effect for paragraphs */
 }
 
+=======
+}
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 @media (max-width: 768px) {
   #culture {
     padding-top: 20%;
@@ -111,7 +123,10 @@
     font-size: 12px;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 /* ssssssssssssssssssssss */
 .alt-tabs-icon {
   display: block;
@@ -560,4 +575,8 @@ you can use the generic selector below, but it's slower:
 }
 .icon-dribbble:before {
   content: "\e063";
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326

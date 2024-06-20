@@ -1,6 +1,16 @@
 import { useState } from "react";
 import "./Culture.css";
+<<<<<<< HEAD
 
+=======
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGear,
+  faBriefcase,
+  faPencilAlt,
+  faBullhorn,
+} from "@fortawesome/free-solid-svg-icons"; // Correctly import icons
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 
 export default function Culture() {
   const [selectedContent, setSelectedContent] = useState("workshops");
@@ -19,8 +29,13 @@ export default function Culture() {
           onClick={() => onHandleContentSelect("workshops")}
           className={selectedContent === "workshops" ? "active" : ""}
         >
+<<<<<<< HEAD
           <div className="alt-tabs-icon">
             <span className="icon-gears"></span>
+=======
+          <div class="alt-tabs-icon">
+            <span class="icon-gears"></span>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
           </div>
           WORKSHOPS
         </button>
@@ -28,8 +43,13 @@ export default function Culture() {
           onClick={() => onHandleContentSelect("workwithus")}
           className={selectedContent === "workwithus" ? "active" : ""}
         >
+<<<<<<< HEAD
           <div className="alt-tabs-icon">
             <span className="icon-briefcase"></span>
+=======
+          <div class="alt-tabs-icon">
+            <span class="icon-briefcase"></span>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
           </div>
           APPLY
         </button>
@@ -37,8 +57,13 @@ export default function Culture() {
           onClick={() => onHandleContentSelect("internships")}
           className={selectedContent === "internships" ? "active" : ""}
         >
+<<<<<<< HEAD
           <div className="alt-tabs-icon">
             <span className="icon-pencil"></span>
+=======
+          <div class="alt-tabs-icon">
+            <span class="icon-pencil"></span>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
           </div>
           INTERNSHIPS
         </button>
@@ -46,8 +71,13 @@ export default function Culture() {
           onClick={() => onHandleContentSelect("activism")}
           className={selectedContent === "activism" ? "active" : ""}
         >
+<<<<<<< HEAD
           <div className="alt-tabs-icon">
             <span className="icon-megaphone"></span>
+=======
+          <div class="alt-tabs-icon">
+            <span class="icon-megaphone"></span>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
           </div>
           ACTIVISM
         </button>

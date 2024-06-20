@@ -1,5 +1,6 @@
 import "./About.css";
 import Award from "../../images/M-A-Chidiac-Studio-MEA-Business-Award.jpg";
+<<<<<<< HEAD
 import { Bounce } from "react-awesome-reveal";
 
 function About() {
@@ -12,6 +13,28 @@ function About() {
             <Bounce delay={250} duration={1500}>
               <img src={Award} width="194" height="180" alt="Award" />
             </Bounce>
+=======
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
+
+function About() {
+  return (
+    // main section acts as a div
+    <section id="about" className="about__section">
+      {/* title */}
+      <h2 className="about__title"> ABOUT M. A. CHIDIAC</h2>
+      <div className="about__container">
+        <div className="about__award">
+          {" "}
+          <blockquote>
+            <AnimatedOnScroll
+              animationIn="bounceInLeft"
+              animationInDelay={250}
+              animationInDuration={1500}
+
+            >
+              <img src={Award} width="194" height="180" alt="Award" />
+            </AnimatedOnScroll>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
             <p>
               The Visual Communication <br /> Agency for your visual <br />{" "}
               communication needs.
@@ -37,6 +60,10 @@ function About() {
         </div>
         <div className="about__detail2">
           <div className="row text-left">
+<<<<<<< HEAD
+=======
+            {" "}
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
             We love what we do, and bring enthusiasm and commitment to get
             everything done “just right”!
             <br />

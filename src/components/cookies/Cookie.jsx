@@ -6,6 +6,7 @@ function CookiePopup() {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
+<<<<<<< HEAD
     const consent = Cookies.get("user-consent");
     if (!consent) {
       setIsActive(true);
@@ -72,11 +73,32 @@ function CookiePopup() {
       aria-live="assertive"
       aria-label="Cookie Consent Popup"
     >
+=======
+    /* Check if the cookie consent has been given */
+    const consent = Cookies.get("user-consent");
+    /* If not given, show the popup */
+    if (!consent) {
+      setIsActive(true);
+    }
+  }, []);
+
+  const handleAcceptCookies = () => {
+    /* Set a cookie to record the user's consent */
+    /* Expires in 365 days */
+    Cookies.set("user-consent", "accepted", { expires: 365 });
+    setIsActive(false);
+    /* Hide the cookie popup */
+  };
+
+  return (
+    <div className={`cookie-container ${isActive ? "active" : ""}`}>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
       <p>
         We use cookies on this website to give you the best experience on our
         site. To find out more, read our{" "}
         <a href="policy.html">privacy policy</a>.
       </p>
+<<<<<<< HEAD
       <div className="cookie-buttons">
         <button
           className="cookie-btn"
@@ -93,6 +115,11 @@ function CookiePopup() {
           Accept All Cookies
         </button>
       </div>
+=======
+      <button className="cookie-btn" onClick={handleAcceptCookies}>
+        Okay
+      </button>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
     </div>
   );
 }

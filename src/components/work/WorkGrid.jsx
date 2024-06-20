@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Work_Data } from "./PortfolioData";
 import "./WorkGrid.css";
+<<<<<<< HEAD
 import { Bounce, Rotate } from "react-awesome-reveal";
+=======
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
 
 export default function WorkGrid() {
   const [selectedContentType, setSelectedContentType] = useState("");
@@ -28,7 +32,11 @@ export default function WorkGrid() {
         url = `https://player.vimeo.com/video/${item.content}`;
         break;
       case "image":
+<<<<<<< HEAD
         url = item.image2; // Assuming item.image2 is the URL to the image
+=======
+        url = item.image2; // Assuming item.image is the URL to the image
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
         break;
       case "pdf":
         url = item.content; // URL to the PDF file
@@ -57,12 +65,21 @@ export default function WorkGrid() {
   return (
     <section id="work">
       <div>
+<<<<<<< HEAD
         <Bounce delay={500}>
           <h1 className="Work-Titles">Work</h1>
         </Bounce>
         <Rotate delay={900}>
           <h3 className="Work-Title-Description">A Glimpse of What We Do</h3>
         </Rotate>
+=======
+        <AnimatedOnScroll animationIn="bounceInDown" animationInDelay={500}>
+          <h1 className="Work-Titles">Work</h1>
+        </AnimatedOnScroll>
+        <AnimatedOnScroll animationIn="rotateInDownLeft" animationInDelay={900}>
+          <h3 className="Work-Title-Description">A Glimpse of What We Do</h3>
+        </AnimatedOnScroll>
+>>>>>>> 2394336dbc3367ac43ed35d753dca06f8c71c326
       </div>
 
       <div className="work-nav">

@@ -1,0 +1,111 @@
+.content_wrapper {
+  display: flex;
+  /* margin-bottom: 22%; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  /* background-color: rgb(230, 230, 3); */
+  text-align: left;
+}
+.text_content_wrapper {
+  padding-top: 200px;
+  padding-left: 200px;
+}
+.text_content_wrapper h2 {
+  font-size: 80px;
+  font-weight: 1000;
+  overflow: hidden;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  animation: smashText 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  /* font-size: 60px; */
+  letter-spacing: 0.1em;
+  line-height: 18px;
+}
+
+/* Explicit staggered animation delays */
+.word:nth-of-type(1) {
+  animation-delay: 0s;
+} /* WE */
+.word:nth-of-type(2) {
+  animation-delay: 0.5s;
+} /* MAKE */
+.word:nth-of-type(3) {
+  animation-delay: 1s;
+} /* THINGS */
+.word:nth-of-type(4) {
+  animation-delay: 1.5s;
+} /* LOOK */
+.word:nth-of-type(5) {
+  animation-delay: 2s;
+} /* GOOD. */
+
+.second {
+  margin-left: 0.5em;
+}
+
+@keyframes smashText {
+  0% {
+    transform: translateY(-50vh); /* Reduced from -100vh */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* imac */
+@media screen and (min-width: 2560px) {
+  /* CSS rules here */
+  .content_wrapper {
+    height: 100vh; /* Increased height to ensure sufficient space */
+    margin-bottom: 0; /* Remove extra bottom margin */
+  }
+  .text_content_wrapper {
+    padding-top: 400px;
+    padding-left: 250px;
+  }
+  .text_content_wrapper h2 {
+    /* padding-top: 10%; */
+    font-size: 150px; /* Maintaining larger font size for visibility */
+  }
+}
+
+/* mac */
+@media only screen and (min-resolution: 2dppx) {
+  /* CSS rules here */
+  .content_wrapper {
+    height: 100vh; /* Increased height to ensure sufficient space */
+    margin-bottom: 0; /* Remove extra bottom margin */
+  }
+  .text_content_wrapper {
+    padding-top: 200px;
+    padding-left: 150px;
+  }
+  .text_content_wrapper h2 {
+    /* padding-top: 10%; */
+    font-size: 7em; /* Maintaining larger font size for visibility */
+  }
+}
+
+/* phone */
+@media (max-width: 768px) {
+  .content_wrapper {
+    height: 100vh; /* Increased height to ensure sufficient space */
+    margin-bottom: 0; /* Remove extra bottom margin */
+  }
+  .text_content_wrapper {
+    padding-top: 270px;
+    padding-left: 20px;
+  }
+  .text_content_wrapper h2 {
+    /* padding-top: 10%; */
+    font-size: 45px; /* Maintaining larger font size for visibility */
+  }
+  .word {
+    line-height: 50px;
+  }
+}

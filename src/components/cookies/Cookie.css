@@ -1,0 +1,66 @@
+/* Reset margin for all elements */
+* {
+  margin: 0;
+}
+
+/* Apply Roboto font to the entire body */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Paragraph styling with margin and line-height for readability */
+p {
+  margin: 24px 0;
+  line-height: 2;
+}
+
+/* Wrapper padding */
+.wrapper {
+  padding: 32px;
+}
+
+/* Cookie container styling for hidden state */
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640; /* Dark background color */
+  color: #f5f6fa; /* Light text color */
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39); /* Shadow effect */
+  transition: 400ms; /* Smooth transition for showing/hiding */
+}
+
+/* Cookie container styling for active state */
+.cookie-container.active {
+  bottom: 0;
+}
+
+/* Anchor link styling inside the cookie container */
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+/* Button styling for the cookie consent button */
+.cookie-btn {
+  background: #00a7c8; /* Button background color */
+  border: 0;
+  color: #f5f6fa; /* Button text color */
+  padding: 10px 36px;
+  font-size: 15px;
+  margin-bottom: 16px;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.cookie-btn:hover {
+  background: #00a7c877; /* Slightly transparent background on hover */
+}
+
+.cookie-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}

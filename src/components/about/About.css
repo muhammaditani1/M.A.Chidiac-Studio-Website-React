@@ -1,0 +1,243 @@
+.about__section {
+  /* background-color: blueviolet; */
+  margin-top: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 60px 0;
+  text-align: center; /* Center align titles */
+}
+
+/* Base Styles */
+.about__container {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: flex-start; /* Center align flex items horizontally */
+  align-items: flex-start; /* Align flex items to the top */
+}
+
+.about__award {
+  flex: 1; /* Take up available space */
+  max-width: 300px; /* Limit maximum width of the award section */
+  margin-right: 10px; /* Add some space between columns */
+  margin-bottom: 20px; /* Add some space at the bottom */
+  margin-left: 100px;
+}
+
+.about__award blockquote {
+  margin: 3em 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.about__award blockquote p {
+  margin-bottom: 1em;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 38px;
+  font-size: 24px;
+  font-style: normal;
+  color: rgb(119, 119, 119);
+}
+
+.about__award blockquote footer {
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(119, 119, 119);
+}
+
+.about__detail1,
+.about__detail2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Center align content horizontally */
+  flex: 1; /* Take up available space */
+  max-width: 400px; /* Limit maximum width of detail sections */
+  margin-left: 10px; /* Add some space between columns */
+  margin-top: 38px;
+  margin-bottom: 190px; /* Add some space at the bottom */
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(119, 119, 119);
+}
+
+.about__title {
+  margin-bottom: 1.3em;
+  font-family: Dosis, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #111;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Center align content horizontally */
+  flex: 1; /* Take up available space */
+  margin-bottom: 0;
+}
+
+.row.text-left {
+  text-align: justify; /* This will ensure the text in these rows is aligned to the left */
+}
+
+@media screen and (min-width: 2560px) {
+  .about__section {
+    padding-top: 200px;
+    .about__title {
+      font-size: 80px;
+      letter-spacing: 0.1em;
+      font-weight: 200;
+    }
+  }
+  .about__container {
+    width: 100%;
+    padding-left: 300px;
+  }
+  .about__award {
+    max-width: 600px;
+  }
+  .about__award blockquote {
+    /* width: 600px; */
+  }
+  .about__award blockquote p {
+    font-size: 40px;
+  }
+  .about__award blockquote img {
+    width: 500px;
+    height: auto;
+  }
+  .about__award blockquote footer {
+    font-size: 30px;
+  }
+  .about__detail1,
+  .about__detail2 {
+    max-width: 600px;
+  }
+  .row {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-resolution: 2dppx) {
+  .about__section {
+    padding-top: 30px;
+    .about__title {
+      font-size: 40px;
+      letter-spacing: 0.1em;
+      font-weight: 200;
+    }
+  }
+  .about__container {
+    /* width: 100%; */
+    /* padding-left: 300px; */
+  }
+  .about__award {
+    padding-right: 15px;
+  }
+  .about__award blockquote {
+    /* width: 600px; */
+  }
+  .about__award blockquote p {
+    font-size: 24px;
+  }
+  .about__award blockquote img {
+    height: 300px;
+    width: auto;
+  }
+  .about__award blockquote footer {
+    font-size: 15px;
+  }
+  .about__detail1,
+  .about__detail2 {
+    max-width: 440px;
+    /* border: #111 solid; */
+    padding-left: 20px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .about__detail1 {
+    padding-right: 10px;
+  }
+  .row {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+/* Phone */
+@media (max-width: 768px) {
+  .about__section {
+    height: auto; /* Adjust height to auto to contain all content vertically */
+    padding: 20px 0; /* Reduced padding to avoid excess spacing */
+    overflow: hidden;
+  }
+  .about__container {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+    justify-content: center;
+    align-items: center; /* Center align columns vertically */
+    overflow: auto; /* Ensures all content can scroll if it overflows */
+    width: 100%; /* Ensures container uses full width */
+    overflow: hidden;
+  }
+
+  .about__award {
+    max-width: 100%; /* Allow award section to take up full width */
+    margin: 10px 0; /* Adds top and bottom margins for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content vertically */
+    justify-content: center;
+  }
+  .about__award blockquote p {
+    font-size: 16px; /* Improved readability on mobile */
+  }
+  .about__award blockquote img {
+    margin-top: -45px; /* Remove negative margin */
+    width: 100%; /* Adjust width to be responsive */
+    max-width: 200px; /* Limit maximum width */
+    height: auto;
+  }
+  .about__award blockquote footer {
+    font-size: 12px; /* Adjusted for better readability */
+  }
+  .about__title {
+    font-size: 20px !important; /* Slightly larger for better visibility */
+  }
+
+  .about__detail1,
+  .about__detail2 {
+    max-width: 100%; /* Allow detail sections to take up full width on smaller screens */
+    margin-top: 10px; /* Adds top and bottom margins for spacing */
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    align-items: center; /* Center align content vertically */
+    margin-bottom: 0px;
+  }
+  .about__detail2 {
+    margin-top: -20px;
+    margin-bottom: -40px;
+  }
+  .row {
+    font-size: 14px; /* Increased for readability */
+    line-height: 18px; /* Adjusted for more compact text */
+    margin-bottom: 50px; /* Ensure spacing at the bottom of each row */
+  }
+}

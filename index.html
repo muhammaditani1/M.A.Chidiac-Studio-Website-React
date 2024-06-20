@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      M. A. Chidiac Studio | Production House | Design Agency | Animation Studio
+      | Beirut, Lebanon
+    </title>
+    <meta
+      name="description"
+      content="M. A. Chidiac Studio | Production House | Design Agency | Animation Studio | Beirut, Lebanon"
+    />
+    <meta name="author" content="M. A. Chidiac Studio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="./src/images/M.A.-Chidiac-Studio-logo.png"
+    />
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/180x180.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="public/57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="public/72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="public/76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="public/114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="public/120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="public/144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="public/152x152.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="manifest" href="public/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <script>
+      // Google Analytics initialization
+      function initializeAnalytics() {
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-MFZ294R");
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-W33TRL642E");
+      }
+
+      // Check for user consent
+      function checkConsent() {
+        var userConsent = document.cookie
+          .split("; ")
+          .find((row) => row.startsWith("user-consent="))
+          ?.split("=")[1];
+        var thirdPartyConsent = document.cookie
+          .split("; ")
+          .find((row) => row.startsWith("third-party-consent="))
+          ?.split("=")[1];
+
+        if (userConsent === "accepted" && thirdPartyConsent === "accepted") {
+          initializeAnalytics();
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", checkConsent);
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+.footer {
+  -webkit-text-size-adjust: 100%;
+  color: #111;
+  line-height: 1.6;
+  /* height: 100vh; */
+  /* background-color: darkmagenta; */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 60px 0;
+  /* background-color: #f8f8f8; */
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-container {
+  -webkit-text-size-adjust: 100%;
+  color: #111;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.footer-image {
+  -webkit-text-size-adjust: 100%;
+  color: #111;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  -webkit-tap-highlight-color: transparent;
+  margin-bottom: 30px;
+  visibility: visible;
+  animation-duration: 1.2s;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.footer-image img:not([draggable]) {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.footer-links {
+  -webkit-text-size-adjust: 100%;
+  color: #111;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  width: 35px;
+  height: 35px;
+  line-height: 25px !important;
+  letter-spacing: 1.2em;
+  position: relative;
+  margin: 0 8px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #4e4e4e;
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+
+.footer-links a:hover {
+  scale: 2;
+  color: #111;
+}
+
+.footer-text {
+  -webkit-text-size-adjust: 100%;
+  color: #4e4e4e;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.footer a {
+  color: #999;
+  text-decoration: none;
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.footer-text.footer-copy a {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-family: Dosis, arial, sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #4e4e4e;
+  text-decoration: none;
+}
+.footer-copy a:hover {
+  text-decoration: underline;
+  scale: 2;
+  color: #111;
+}
+.footer-made {
+  font-size: 11px;
+  color: #999;
+}
+
+.local-scroll {
+  -webkit-text-size-adjust: 100%;
+  color: #111;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.link-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #111;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 48px;
+}
+
+/* Media queries for tablets */
+@media (min-width: 600px) {
+  .footer-container {
+    padding: 0 30px;
+  }
+
+  .footer-links a {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Media queries for desktops */
+@media (min-width: 900px) {
+  .footer {
+    padding: 140px 0;
+  }
+
+  .footer-container {
+    width: 1170px;
+  }
+
+  .footer-links a {
+    margin: 0 15px;
+  }
+}

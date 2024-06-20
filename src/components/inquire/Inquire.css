@@ -1,0 +1,93 @@
+.inquire-body {
+  /* height: 100vh; */
+  clear: both; /* Clear floats */
+  /* background-color: #111; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%; /* Ensure full width but not more */
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+}
+
+.inquire-container-center {
+  max-width: 600px; /* Set a max-width for better control on large screens */
+  width: 90%; /* Responsive width on all devices */
+  padding: 50px 10px; /* Scaled padding for smaller screens */
+  margin: 0 auto; /* Center align the container */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: auto; /* Auto height for better flexibility */
+}
+
+.inquire-center {
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 20px 0; /* Compact margin for title */
+  font-family: Dosis, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.inquire-button a {
+  font-family: Roboto, sans-serif;
+  font-size: 12px; /* Base font size for desktops */
+  color: rgb(17, 17, 17);
+  font-weight: 400;
+  line-height: 17px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  padding: 12px 48px; /* Responsive padding */
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+}
+
+.inquire-button a:hover {
+  background-color: white;
+}
+
+/* Media Queries for responsive adjustments */
+
+/* imac */
+@media screen and (min-width: 2560px) {
+}
+/* Macbook*/
+@media only screen and (min-resolution: 2dppx) {
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem; /* Smaller font size for tablets */
+  }
+
+  .inquire-button a {
+    padding: 10px 30px; /* Smaller button padding */
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .inquire-body {
+    /* padding: 40px 15px; Adjusted padding */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
